@@ -1,0 +1,50 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: black;
+}
+.txt {
+  position: absolute;
+  color: #873ebc;
+  bottom: 50px;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+.heart3d {
+  position: absolute;
+  margin: auto;
+  top: 29vh;
+  left: 43vw;
+  width: 200px;
+  height: 325px;
+  transform-style: preserve-3d; /* chechpoint*/
+  animation: spin 15s infinite linear;
+}
+.heart3d div {
+  position: absolute;
+  justify-content: center;
+  align-content: center;
+  width: 200px;
+  height: 325px;
+  border: solid #873ebc;
+  border-radius: 50% 50% 0 / 40% 50% 0;
+  border-width: 2px 2px 0 0;
+  box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
+}
+@keyframes spin {
+  to {
+    transform: rotateY(360deg) rotateX(360deg);
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

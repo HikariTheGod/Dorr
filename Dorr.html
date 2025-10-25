@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5/12/2023</title>
+    <link rel="stylesheet" href="Dorr.css" />
+  </head>
+  <body>
+    <div class="heart3d"></div>
+    <div class="txt">5/12/2023 - till death do us part</div>
+    <audio id="bg-music" loop>
+      <source src="song.mp3" type="audio/mpeg">
+        ur browser doesnt support me :(
+    </audio>
+    <script src="MyBeloved.js"></script>
+    <script>
+      const music = document.getElementById('bg-music');
+
+      function playMusic() {
+        music.play();
+
+        window.addEventListener('click', playMusic);
+        window.addEventListener('scroll', playMusic);
+      }
+
+      window.addEventListener('click', playMusic);
+      window.addEventListener('scroll', playMusic);
+    </script>
+  </body>
+</html>
