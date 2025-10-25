@@ -19,7 +19,7 @@ body {
   margin: auto;
   top: 29vh;
   left: 43vw;
-  width: 10vw;
+  width: 100px;
   height: auto;
   transform-style: preserve-3d; /* chechpoint*/
   animation: spin 15s infinite linear;
@@ -48,4 +48,5 @@ body {
     opacity: 1;
   }
 }
+
 
