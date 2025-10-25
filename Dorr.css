@@ -5,6 +5,7 @@ body {
   height: 100vh;
   margin: 0;
   background: black;
+  overflow: hidden; /* جلوگیری از اسکرول اضافی */
 }
 .txt {
   position: absolute;
@@ -16,20 +17,20 @@ body {
 }
 .heart3d {
   position: absolute;
-  margin: auto;
-  top: 29vh;
-  left: 43vw;
-  width: 200px;
-  height: 325px;
-  transform-style: preserve-3d; /* chechpoint*/
+  top: 50%;
+  left: 50%;
+  width: 20vw;   /* اندازه نسبی */
+  height: 32.5vw; /* نسبت اصلی حفظ شده */
+  transform-style: preserve-3d;
   animation: spin 15s infinite linear;
+  transform: translate(-50%, -50%);
 }
 .heart3d div {
   position: absolute;
   justify-content: center;
   align-content: center;
-  width: 200px;
-  height: 325px;
+  width: 100%;
+  height: 100%;
   border: solid #873ebc;
   border-radius: 50% 50% 0 / 40% 50% 0;
   border-width: 2px 2px 0 0;
@@ -37,17 +38,18 @@ body {
 }
 @keyframes spin {
   to {
-    transform: rotateY(360deg) rotateX(360deg);
+    transform: translate(-50%, -50%) rotateY(360deg) rotateX(360deg);
   }
 }
 @keyframes appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-
-
+/* ریسپانسیو موبایل */
+@media (max-width: 600px) {
+  .heart3d {
+    width: 40vw;
+    height: 65vw;
+  }
+}
