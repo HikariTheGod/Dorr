@@ -9,7 +9,7 @@ body {
 }
 .txt {
   position: absolute;
-  color: #873ebc;
+  color: #ff2929;
   bottom: 50px;
   font-family: sans-serif;
   font-weight: 600;
@@ -31,7 +31,7 @@ body {
   align-content: center;
   width: 100%;
   height: 100%;
-  border: solid #873ebc;
+  border: solid #ff2929;
   border-radius: 50% 50% 0 / 40% 50% 0;
   border-width: 2px 2px 0 0;
   box-shadow: 1px 0 0 rgba(255, 255, 255, 0.25);
